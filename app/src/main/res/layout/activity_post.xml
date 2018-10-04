@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity">
+
+    <ImageButton
+        android:background="@drawable/addimage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="75dp"
+        android:onClick="imageButtonClicked"
+        android:id="@+id/imageButton"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/editshape"
+        android:hint="Enter Name of the Picture"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/editshape"
+        android:hint="Enter Picture Description"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:onClick="submitButtonClicked"
+        android:text="SUBMIT" />
+</LinearLayout>
